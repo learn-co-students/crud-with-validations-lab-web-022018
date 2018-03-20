@@ -1,0 +1,5 @@
+<%= render "errors" %>
+<h1> Edit a Song </h1>
+<%= render "form" %>
+<% form_tag(songs_path, method: "delete")%> <br></br>
+<%= submit_tag "Delete #{@song.title}" %>

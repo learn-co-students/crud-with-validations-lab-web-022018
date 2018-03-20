@@ -1,0 +1,6 @@
+<% if @song.errors.any? %>
+  <h2> There were some errors: </h2>
+  <% @song.errors.full_messages.each do |error|%>
+    <li><%= error %> </li>
+  <% end %>
+<% end %>
